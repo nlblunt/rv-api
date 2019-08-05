@@ -14,8 +14,8 @@ class CreateRvParks < ActiveRecord::Migration[5.2]
       t.boolean :new, default => true
 
       t.text :description
-      t.boolean :pets, default: => false
-      t.boolean :laundry, default: => false
+      t.boolean :pets, :default => false
+      t.boolean :laundry, :default => false
 
       t.timestamps
     end
