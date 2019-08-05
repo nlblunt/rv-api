@@ -1,0 +1,2 @@
+class RvPark < ApplicationRecord
+end

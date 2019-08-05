@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parkName: MyString
+  lat: 
+  lng: 
+  icon: MyString
+  googleId: MyString
+  rating: 
+  address: MyString
+  zip: 
+
+two:
+  parkName: MyString
+  lat: 
+  lng: 
+  icon: MyString
+  googleId: MyString
+  rating: 
+  address: MyString
+  zip: 
