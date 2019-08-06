@@ -2,7 +2,8 @@ class GoogleController < ApplicationController
   require 'net/http'
 
   def getGooglePlaces
-    googlePlacesAPI = ENV['GOOGLE_PLACE_API']
+    googlePlacesAPI = "AIzaSyAarQDEiiqXF5A_EloEaSvWY4nShYCrn-g"
+    #googlePlacesAPI = ENV['GOOGLE_PLACE_API']
     googleUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + params[:search] + "&radius=25000&type=" + params[:type] +"&key="+googlePlacesAPI
     url = URI.parse(googleUrl)
     client = HTTPClient.new
@@ -29,7 +30,8 @@ class GoogleController < ApplicationController
           rv = JSON.parse(res)
   
           # Create the RV_Park
-          result << RvPark.create(parkName: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"])
+          NewRv = RvPark.create(parkName: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"])
+          result << NewRv
         else
           result << RvPark.where(:googleId => r["place_id"])
         end
