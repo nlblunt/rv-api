@@ -11,7 +11,7 @@ class CreateRvParks < ActiveRecord::Migration[5.2]
       t.string :address
       t.integer :zip
       t.string :website
-      t.boolean :new, default => true
+      t.boolean :new, :default => true
 
       t.text :description
       t.boolean :pets, :default => false
