@@ -35,7 +35,6 @@
       <%= form.text_field :reservation, :class => 'form-control' %>
 
       <div class="row">
-            <h3>Payment Types</h3>
             <div class='form-check'>
                 <%= form.check_box :check, :class => 'form-check-input' %>
                 <%= form.label :check, "Checks", :class => 'form-check-label' %>
@@ -51,7 +50,6 @@
       </div>
 
       <div class="row">
-            <h3>Features</h3>
             <div class="col">
               <div class="form-check">
                 <%= form.check_box :pets, :class => 'form-check-input' %>
@@ -115,13 +113,15 @@
       </div>
       </div>
 
+      <hr>
+
       <div class='form-check'>
         <%= form.check_box :verified, :class => 'form-check-input' %>
         <%= form.label :verified, "Is this Campground Site completed?", :class => 'form-check-label' %>
       </div>
       
       <p>
-        <%= form.submit, :class => 'btn btn-primary' %>
+        <%= form.submit :class => 'btn btn-primary' %>
       </p>
    
     <% end %>
