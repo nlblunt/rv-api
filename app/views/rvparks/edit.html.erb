@@ -1,0 +1,64 @@
+<div class="container form-1000px">
+<%= form_with(model: @rvpark, local: true) do |form| %>
+  <div class="form-1000px centered"
+    <% if @rvpark.errors.any? %>
+      <div id="error_explanation">
+        <h2>
+          <%= pluralize(@rvpark.errors.count, "error") %> prohibited
+          this article from being saved:
+        </h2>
+        <ul>
+          <% @rvpark.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+   
+    <div class="form-group">
+      <%= form.label :parkName %><br>
+      <%= form.text_field :parkName, :class => 'form-control' %>
+
+      <%= form.label :address %><br>
+      <%= form.text_field :address, :class => 'form-control' %>
+
+      <%= form.label :description %><br>
+      <%= form.text_area :description, :class => 'form-control' %>
+
+      <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <%= form.check_box :pets, :class => 'form-check-input' %>
+                <%= form.label :pets, "Allows pets", :class => 'form-check-label' %>
+              </div>
+              <div class='form-check'>
+                <%= form.check_box :laundry, :class => 'form-check-input' %>
+                <%= form.label :laundry, "Laundry Facilities", :class => 'form-check-label' %>
+              </div>
+            </div>
+
+            <div class='col'>
+              <div class='form-check'>
+                <%= form.check_box :bigrigs, :class => 'form-check-input' %>
+                <%= form.label :bigrigs, "Room for Big Rigs?", :class => 'form-check-label' %>
+              </div>
+            </div>
+
+            <div class='col'>
+              <div class='form-check'>
+                <%= form.check_box :dumpstation, :class => 'form-check-input' %>
+                <%= form.label :dumpstation, "Has a dumpstation?", :class => 'form-check-label' %>
+              </div>
+            </div>
+      </div>
+      </div>
+
+
+      <p>
+      <%= form.submit %>
+    </p>
+   
+    <% end %>
+   
+    <%= link_to 'Back', admin_rv_path %>
+  </div>

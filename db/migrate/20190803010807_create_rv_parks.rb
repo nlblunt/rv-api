@@ -1,6 +1,6 @@
 class CreateRvParks < ActiveRecord::Migration[5.2]
   def change
-    create_table :rv_parks do |t|
+    create_table :rvparks do |t|
       t.string :parkName
       t.boolean :private, :default => false
       t.boolean :public, :default => true
@@ -40,7 +40,7 @@ class CreateRvParks < ActiveRecord::Migration[5.2]
       t.boolean :mastercard, :default => false
       t.boolean :check, :default => false
 
-      t.boolean :new, :default => true
+      t.boolean :verified, :default => false
       t.timestamps
     end
   end
