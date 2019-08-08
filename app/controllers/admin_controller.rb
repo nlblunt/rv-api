@@ -3,15 +3,16 @@ class AdminController < ApplicationController
   end
 
   def rv
-    puts params
     if params[:search]
-      @rv = Rvpark.where("'parkName' = ?", params[:search])
-      puts @rv
+      @rv = Rvpark.where("parkname LIKE ?", "%#{params[:search]}%")
     else
       @rv = Rvpark.where(:verified => false)
     end
-
     #@rvNew = Rvpark.where(:new => true)
+  end
+
+  def searchresults
+
   end
 
   def rvall

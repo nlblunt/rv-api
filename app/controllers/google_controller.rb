@@ -31,7 +31,7 @@ class GoogleController < ApplicationController
 
           puts rv
           # Create the RV_Park
-          rvRes = Rvpark.create(parkName: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"],price: rv["result"]["price_level"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"])
+          rvRes = Rvpark.create(parkname: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"],price: rv["result"]["price_level"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"])
           result << rvRes
         else
             result << Rvpark.where(:googleId => r["place_id"]).first

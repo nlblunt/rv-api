@@ -1,3 +1,4 @@
+
 <%= link_to 'Show All', admin_rvall_path %>
 
 <%= form_with url: admin_rv_path, method: :get do |form| %>
@@ -15,7 +16,7 @@
 
 <% @rv.each do |r| %>
     <tr>
-        <td><%= r.parkName %></td>
+        <td><%= r.parkname %></td>
         <td><%= r.address %></td>
         <td><%= r.verified %></td>
         <td><%= link_to 'edit', edit_rvpark_path(r) %></td> 

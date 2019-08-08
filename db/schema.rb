@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_08_011448) do
+ActiveRecord::Schema.define(version: 2019_08_08_185116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "rvparks", force: :cascade do |t|
-    t.string "parkName"
+    t.string "parkname"
     t.boolean "private", default: false
     t.boolean "public", default: true
     t.string "membership"
