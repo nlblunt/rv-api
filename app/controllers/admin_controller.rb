@@ -3,7 +3,13 @@ class AdminController < ApplicationController
   end
 
   def rv
-    @rv = Rvpark.where(:verified => false)
+    puts params
+    if params[:search]
+      @rv = Rvpark.where("'parkName' = ?", params[:search])
+      puts @rv
+    else
+      @rv = Rvpark.where(:verified => false)
+    end
 
     #@rvNew = Rvpark.where(:new => true)
   end

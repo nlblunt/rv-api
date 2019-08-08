@@ -1,8 +1,11 @@
 <%= link_to 'Show All', admin_rvall_path %>
 
+<%= form_with url: admin_rv_path, method: :get do |form| %>
+    Search <%= form.text_field :search %>
+    <%= form.submit 'Search', name: nil %>
+<% end %>
 
-
-<table>
+<table class="table table-striped">
 <tr>
 <td>Name</td>
 <td>Address</td>
