@@ -3,9 +3,12 @@ class AdminController < ApplicationController
   end
 
   def rv
-    @rv = Rvpark.all
+    @rv = Rvpark.where(:verified => false)
 
-    @rvNew = Rvpark.where(:new => true)
-    puts @rv.first.playground
+    #@rvNew = Rvpark.where(:new => true)
+  end
+
+  def rvall
+    @rv = Rvpark.all
   end
 end

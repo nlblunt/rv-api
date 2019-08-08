@@ -12,6 +12,11 @@ class RvparksController < ApplicationController
         @rvpark = Rvpark.find(params[:id])
  
         if @rvpark.update(rvpark_params)
+            if @rvpark.isnotcampground == true
+                @rvpark.verified = true
+                @rvpark.save
+            end
+
             redirect_to admin_rv_path
         else
             render 'edit'
@@ -23,6 +28,6 @@ class RvparksController < ApplicationController
     params.require(:rvpark).permit(:parkName, :private, :public, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
     :zip, :website, :reservation, :price, :description, :pets, :laundry, :bigrigs, :paved, :dirt, :gravel, :dumpstation,
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :visa, :mastercard,
-    :check, :verified)
+    :check, :verified, :isnotcampground)
   end
 end

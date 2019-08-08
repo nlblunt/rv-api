@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'admin/index'
   get 'admin/rv'
+  get 'admin/rvall'
   get 'google/getPlacesByZip'
   get 'google/getPlacesByCity'
   get 'google/getGooglePlaces'
