@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_09_000245) do
+ActiveRecord::Schema.define(version: 2019_08_09_225344) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 2019_08_09_000245) do
     t.string "reservation"
     t.float "price"
     t.text "description"
-    t.boolean "pets", default: false
+    t.boolean "nopets", default: false
     t.boolean "laundry", default: false
     t.boolean "bigrigs", default: false
     t.boolean "paved", default: false
@@ -57,6 +57,13 @@ ActiveRecord::Schema.define(version: 2019_08_09_000245) do
     t.datetime "updated_at", null: false
     t.boolean "isnotcampground", default: false
     t.boolean "premium"
+    t.boolean "cabins", default: false
+    t.boolean "fullhookup", default: false
+    t.boolean "electriconly", default: false
+    t.boolean "wateronly", default: false
+    t.boolean "paidshowers", default: false
+    t.boolean "foodlockers", default: false
+    t.date "premiumuntil"
   end
 
 end

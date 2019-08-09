@@ -26,8 +26,8 @@ class RvparksController < ApplicationController
     private
   def rvpark_params
     params.require(:rvpark).permit(:parkname, :private, :public, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
-    :zip, :website, :reservation, :price, :description, :pets, :laundry, :bigrigs, :paved, :dirt, :gravel, :dumpstation,
+    :zip, :website, :reservation, :price, :description, :nopets, :laundry, :bigrigs, :paved, :dirt, :gravel, :dumpstation,
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :visa, :mastercard,
-    :check, :verified, :isnotcampground)
+    :check, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :foodlockers)
   end
 end
