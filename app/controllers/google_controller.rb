@@ -14,8 +14,8 @@ class GoogleController < ApplicationController
     result = Array.new
 
     case params[:type]
-    when "rv_park"
-      # GET RV PARK DATA
+    when "campground" || "rv_park"
+      # GET CAMPGROUND
       data["results"].each do |r|
         # Does this place already exist in the database?
         if Rvpark.where(:googleId => r["place_id"]).blank?
@@ -43,27 +43,5 @@ class GoogleController < ApplicationController
     end
 
     render json: result # data["results"]
-  end
-
-  def getPlacesByZip
-    #googleUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat +","+lon+"&radius=25000&type=rv_park&key="+googlePlacesAPI
-    googleUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + params[:zip] + "&radius=25000&type=" + params[:type] +"&key="+googlePlacesAPI
-    url = URI.parse(googleUrl)
-    client = HTTPClient.new
-    res = client.get_content(url);
-    data = JSON.parse(res)
-
-    render json: data["results"]
-  end
-
-  def getPlacesByCity
-    googlePlacesAPI = "AIzaSyAnfLn3O2pn0u5uD-_CpRTn9eVOYHvgSjs";
-    googleUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + params[:city] + "&radius=25000&type=" + params[:type] +"&key="+googlePlacesAPI
-    url = URI.parse(googleUrl)
-    client = HTTPClient.new
-    res = client.get_content(url);
-    data = JSON.parse(res)
-
-    render json: data["results"]
   end
 end

@@ -33,11 +33,19 @@
       <%= form.label :description %><br>
       <%= form.text_area :description, :class => 'form-control' %>
 
+      <%= form.label :email %><br>
+      <%= form.text_field :email, :class => 'form-control' %>
+
       <%= form.label :website %><br>
       <%= form.text_field :website, :class => 'form-control' %>
 
       <%= form.label :reservation %><br>
       <%= form.text_field :reservation, :class => 'form-control' %>
+
+      <div class ='form-check'>
+            <%= form.check_box :premium, :class => 'form-check-input' %>
+            <%= form.label :premium, "Premium Member", :class => 'form-check-label' %>
+      </div>
 
       <div class="row">
             <div class='form-check'>

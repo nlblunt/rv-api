@@ -1,6 +1,6 @@
 <%= link_to 'Show new', admin_rv_path %>
 
-<%= form_with(admin_rvall_path method: :get) do |form| %>
+<%= form_with(url: admin_rv_path method: :get, local: true) do |form| %>
     Search <%= form.text_field :search, params[:search] %>
     <%= form.submit 'Search', name: nil %>
 <% end %>

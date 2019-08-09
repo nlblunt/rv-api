@@ -11,8 +11,8 @@ class AdminController < ApplicationController
     #@rvNew = Rvpark.where(:new => true)
   end
 
-  def searchresults
-
+  def rv_searchresults
+    @rv = Rvpark.where("parkname LIKE ?", "%#{params[:search]}%")
   end
 
   def rvall
