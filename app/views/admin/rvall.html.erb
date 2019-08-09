@@ -1,11 +1,11 @@
 <%= link_to 'Show new', admin_rv_path %>
 
-<%= form_with(url: admin_rv_path method: :get, local: true) do |form| %>
+<%= form_with(url: admin_rv_path, method: :get, local: true) do |form| %>
     Search <%= form.text_field :search, params[:search] %>
     <%= form.submit 'Search', name: nil %>
 <% end %>
 
-<table class="table table-striped">
+<table id="rvdisplay-table" class="table table-sm table-striped">
 <tr>
 <td>Name</td>
 <td>Address</td>
