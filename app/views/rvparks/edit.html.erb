@@ -30,7 +30,10 @@
         <%= form.check_box :private, :class => 'form-check-input' %>
         <%= form.label :private, "Private Campground", :class => 'form-check-label' %>
       </div>
-
+      <div class ='form-check'>
+        <%= form.check_box :dayuse, :class => 'form-check-input' %>
+        <%= form.label :dayuse, "Day Use fee?", :class => 'form-check-label' %>
+      </div>
       <%= form.label :membership %>
       <%= form.select(:membership, ['', 'Thousand Trails', 'Outdoor World', 'Resort Parks International',
       'Coast to Coast Campgrounds', 'Adventure Outdoor Resorts', 'Outdoor Adventures', 'Colorado River Adventures'], {}, {:class => 'form-control'}) %>
@@ -52,14 +55,14 @@
       <%= form.label :email %><br>
       <%= form.email_field :email, :class => 'form-control' %>
 
-      <%= form.label :website %><br>
+      <%= form.label :website %>  <%= link_to @rvpark.website, @rvpark.website, :target => 'new' %>
       <%= form.text_field :website, :class => 'form-control' %>
 
       <%= form.label :reservation %><br>
       <%= form.text_field :reservation, :class => 'form-control' %>
 
       <hr>
-      
+
       <div class ='form-check'>
         <%= form.check_box :premium, :class => 'form-check-input' %>
         <%= form.label :premium, "Premium Member", :class => 'form-check-label' %>
@@ -82,14 +85,39 @@
                 <%= form.check_box :mastercard, :class => 'form-check-input' %>
                 <%= form.label :mastercard, "Mastercard", :class => 'form-check-label' %>
             </div>
+            <div class='form-check'>
+                <%= form.check_box :militarydiscount, :class => 'form-check-input' %>
+                <%= form.label :militarydiscount, "Military Discounts offered", :class => 'form-check-label' %>
+            </div>
+            <hr>
+
+            <h6>Images</h6>
+            DO NOT USE THIS SECTION
+            <% @rvpark.parkimages.each do |image| %>
+              <%= image.url %><br>
+            <% end %>
+
+            <%= form.label :url1, 'New image url' %><br>
+            <%= form.text_field :url1 %>
+
+            <%= form.label :url2, 'New image url' %><br>
+            <%= form.text_field :url2 %>
+
+            <%= form.label :url3, 'New image url' %><br>
+            <%= form.text_field :url3 %>
 
             <hr>
+
             <div class="row">
               <div class="col">
               <h6>Road / Lot types</h6>
                 <div class="form-check">
                   <%= form.check_box :dirt, :class => 'form-check-input' %>
                   <%= form.label :dirt, "Dirt", :class => 'form-check-label' %>
+                </div>
+                <div class="form-check">
+                  <%= form.check_box :grass, :class => 'form-check-input' %>
+                  <%= form.label :grass, "Grass", :class => 'form-check-label' %>
                 </div>
                 <div class="form-check">
                   <%= form.check_box :gravel, :class => 'form-check-input' %>
@@ -99,6 +127,10 @@
                   <%= form.check_box :paved, :class => 'form-check-input' %>
                   <%= form.label :paved, "Paved", :class => 'form-check-label' %>
                 </div>
+                <div class="form-check">
+                  <%= form.check_box :beach, :class => 'form-check-input' %>
+                  <%= form.label :beach, "Beachfront Access", :class => 'form-check-label' %>
+                </div>                
               </div>
             </div>
             <hr>
@@ -119,7 +151,7 @@
               </div>
               <div class='form-check'>
                 <%= form.check_box :firepits, :class => 'form-check-input' %>
-                <%= form.label :firepits, "Firepits?", :class => 'form-check-label' %>
+                <%= form.label :firepits, "Firepits", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :communityarea, :class => 'form-check-input' %>
@@ -127,11 +159,11 @@
               </div>
               <div class='form-check'>
               <%= form.check_box :cabins, :class => 'form-check-input' %>
-              <%= form.label :cabins, "Cabins?", :class => 'form-check-label' %>
+              <%= form.label :cabins, "Cabins", :class => 'form-check-label' %>
             </div>
             <div class='form-check'>
             <%= form.check_box :fullhookup, :class => 'form-check-input' %>
-            <%= form.label :fullhookup, "Full hook ups available?", :class => 'form-check-label' %>
+            <%= form.label :fullhookup, "Full hook ups available", :class => 'form-check-label' %>
           </div>
           <div class='form-check'>
           <%= form.check_box :electriconly, :class => 'form-check-input' %>
@@ -139,53 +171,65 @@
         </div>
         <div class='form-check'>
         <%= form.check_box :wateronly, :class => 'form-check-input' %>
-        <%= form.label :wateronly, "Only water??", :class => 'form-check-label' %>
+        <%= form.label :wateronly, "Only water", :class => 'form-check-label' %>
       </div>
             </div>
 
             <div class='col'>
               <div class='form-check'>
                 <%= form.check_box :bigrigs, :class => 'form-check-input' %>
-                <%= form.label :bigrigs, "Room for Big Rigs?", :class => 'form-check-label' %>
+                <%= form.label :bigrigs, "Room for Big Rigs", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :store, :class => 'form-check-input' %>
-                <%= form.label :store, "Store on or near?", :class => 'form-check-label' %>
+                <%= form.label :store, "Store on or near", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :cabletv, :class => 'form-check-input' %>
-                <%= form.label :cabletv, "Cable TV?", :class => 'form-check-label' %>
+                <%= form.label :cabletv, "Cable TV", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :picnictables, :class => 'form-check-input' %>
                 <%= form.label :picnictables, "Picnic Tables", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
+              <%= form.check_box :freeshowers, :class => 'form-check-input' %>
+              <%= form.label :freeshowers, "Free Showers", :class => 'form-check-label' %>
+            </div>
+              <div class='form-check'>
               <%= form.check_box :paidshowers, :class => 'form-check-input' %>
-              <%= form.label :paidshowers, "Paid Showers?", :class => 'form-check-label' %>
+              <%= form.label :paidshowers, "Paid Showers", :class => 'form-check-label' %>
             </div>
             <div class='form-check'>
             <%= form.check_box :foodlockers, :class => 'form-check-input' %>
-            <%= form.label :foodlockers, "Food Lockers?", :class => 'form-check-label' %>
+            <%= form.label :foodlockers, "Food Lockers", :class => 'form-check-label' %>
           </div>
+              <div class='form-check'>
+              <%= form.check_box :slideouts, :class => 'form-check-input' %>
+              <%= form.label :slideouts, "Slide-Outs", :class => 'form-check-label' %>
+            </div>          
             </div>
 
             <div class='col'>
               <div class='form-check'>
                 <%= form.check_box :dumpstation, :class => 'form-check-input' %>
-                <%= form.label :dumpstation, "Has a dumpstation?", :class => 'form-check-label' %>
+                <%= form.label :dumpstation, "Has a dumpstation", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :wifi, :class => 'form-check-input' %>
-                <%= form.label :wifi, "WiFi service?", :class => 'form-check-label' %>
+                <%= form.label :wifi, "WiFi service", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :cell, :class => 'form-check-input' %>
-                <%= form.label :cell, "Cell service available?", :class => 'form-check-label' %>
+                <%= form.label :cell, "Cell service available", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :playground, :class => 'form-check-input' %>
-                <%= form.label :playground, "Playground for kids?", :class => 'form-check-label' %>
+                <%= form.label :playground, "Playground for kids", :class => 'form-check-label' %>
+              </div>
+              <div class='form-check'>
+                <%= form.check_box :outdoorsports, :class => 'form-check-input' %>
+                <%= form.label :outdoorsports, "Outdoor sports area", :class => 'form-check-label' %>
               </div>
             </div>
       </div>

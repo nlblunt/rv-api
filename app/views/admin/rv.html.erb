@@ -3,14 +3,17 @@
 
 <%= form_with(url: admin_rv_path, method: :get, local: true) do |form| %>
     Search <%= form.text_field :search %>
-    <%= form.submit 'Search', name: nil %>
+    <%= form.submit 'Search', name: nil, :class => "btn" %>
 <% end %>
+
+<hr>
 
 <table id="rvdisplay-table" class="table table-sm table-striped">
 <tr>
 <td>Name</td>
 <td>Address</td>
 <td>Verified</td>
+<td>Updated</td>
 <td>Edit</td>
 </tr>
 
@@ -19,6 +22,7 @@
         <td><%= r.parkname %></td>
         <td><%= r.address %></td>
         <td><%= r.verified %></td>
+        <td><%= r.updated_at %></td>
         <td><%= link_to 'edit', edit_rvpark_path(r) %></td> 
     </tr>
 <% end %>

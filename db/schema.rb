@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_09_225344) do
+ActiveRecord::Schema.define(version: 2019_08_12_151223) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "parkimages", force: :cascade do |t|
+    t.bigint "rvpark_id"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["rvpark_id"], name: "index_parkimages_on_rvpark_id"
+  end
 
   create_table "rvparks", force: :cascade do |t|
     t.string "parkname"
@@ -56,6 +64,7 @@ ActiveRecord::Schema.define(version: 2019_08_09_225344) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "isnotcampground", default: false
+    t.string "email"
     t.boolean "premium"
     t.boolean "cabins", default: false
     t.boolean "fullhookup", default: false
@@ -64,6 +73,14 @@ ActiveRecord::Schema.define(version: 2019_08_09_225344) do
     t.boolean "paidshowers", default: false
     t.boolean "foodlockers", default: false
     t.date "premiumuntil"
+    t.boolean "grass"
+    t.boolean "outdoorsports"
+    t.boolean "beach"
+    t.boolean "dayuse"
+    t.boolean "militarydiscount"
+    t.boolean "slideouts"
+    t.boolean "freeshowers"
   end
 
+  add_foreign_key "parkimages", "rvparks"
 end

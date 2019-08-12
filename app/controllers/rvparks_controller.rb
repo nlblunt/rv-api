@@ -17,7 +17,17 @@ class RvparksController < ApplicationController
                 @rvpark.save
             end
 
-            redirect_to admin_rv_path
+            if params[:url1]
+                @rvpark.parkimages.create(:url => params[:url1])
+            end
+            if params[:url2]
+                @rvpark.parkimages.create(:url => params[:url2])
+            end
+            if params[:url3]
+                @rvpark.parkimages.create(:url => params[:url3])
+            end            
+
+            redirect_to edit_rvpark_path(@rvpark)  #admin_rv_path
         else
             render 'edit'
         end
@@ -25,9 +35,10 @@ class RvparksController < ApplicationController
 
     private
   def rvpark_params
-    params.require(:rvpark).permit(:parkname, :private, :public, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
-    :zip, :website, :reservation, :price, :description, :nopets, :laundry, :bigrigs, :paved, :dirt, :gravel, :dumpstation,
-    :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :visa, :mastercard,
-    :check, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :foodlockers)
+    params.require(:rvpark).permit(:parkname, :private, :public, :dayuse, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
+    :zip, :website, :reservation, :price, :description, :email, :nopets, :laundry, :bigrigs, :grass, :paved, :dirt, :gravel, :beach, :dumpstation,
+    :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :outdoorsports, :slideouts, :visa, :mastercard,
+    :check, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
+    :foodlockers)
   end
 end

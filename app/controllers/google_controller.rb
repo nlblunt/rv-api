@@ -3,7 +3,7 @@ class GoogleController < ApplicationController
 
   def getGooglePlaces
 
-    googlePlacesAPI = ENV['GOOGLE_PLACE_API']
+    googlePlacesAPI = "AIzaSyAarQDEiiqXF5A_EloEaSvWY4nShYCrn-g" #ENV['GOOGLE_PLACE_API']
     googleUrl = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + params[:search] + "&radius=25000&type=" + params[:type] +"&key="+googlePlacesAPI
     url = URI.parse(googleUrl)
     client = HTTPClient.new
