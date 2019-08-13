@@ -17,14 +17,24 @@ class RvparksController < ApplicationController
                 @rvpark.save
             end
 
-            if params[:url1]
-                @rvpark.parkimages.create(:url => params[:url1])
+            puts params[:rvpark][:url1]
+            if params[:rvpark][:url1] != ""
+                img = @rvpark.parkimages.new
+                img.url = params[:rvpark][:url1]
+                img.save!
+                #@rvpark.parkimages.create(:url => params[:url1])
             end
-            if params[:url2]
-                @rvpark.parkimages.create(:url => params[:url2])
+            if params[:rvpark][:url2] != ""
+                img = @rvpark.parkimages.new
+                img.url = params[:rvpark][:url2]
+                img.save
+                #@rvpark.parkimages.create(:url => params[:url2])
             end
-            if params[:url3]
-                @rvpark.parkimages.create(:url => params[:url3])
+            if params[:rvpark][:url3] != ""
+                img = @rvpark.parkimages.new
+                img.url = params[:rvpark][:url3]
+                img.save
+                #@rvpark.parkimages.create(:url => params[:url3])
             end            
 
             redirect_to edit_rvpark_path(@rvpark)  #admin_rv_path
@@ -39,6 +49,6 @@ class RvparksController < ApplicationController
     :zip, :website, :reservation, :price, :description, :email, :nopets, :laundry, :bigrigs, :grass, :paved, :dirt, :gravel, :beach, :dumpstation,
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :outdoorsports, :slideouts, :visa, :mastercard,
     :check, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
-    :foodlockers)
+    :foodlockers, :tents, :toiletvault, :toiletflush, :toiletouthouse, :pullthru, :backin, :propane, :latitude, :longitude)
   end
 end

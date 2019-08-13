@@ -7,6 +7,13 @@ class ParkimagesController < ApplicationController
         redirect_to edit_rvpark_path(@rvpark)
     end
 
+    def destroy
+        @image = Parkimage.find(params[:id])
+        @image.delete
+
+        redirect_back(fallback_location: admin_rv_path)
+    end
+
     private
     def parkimage_params
         params.require(:parkimages).permit(:url)

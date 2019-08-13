@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_12_151223) do
+ActiveRecord::Schema.define(version: 2019_08_13_230615) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,6 +80,15 @@ ActiveRecord::Schema.define(version: 2019_08_12_151223) do
     t.boolean "militarydiscount"
     t.boolean "slideouts"
     t.boolean "freeshowers"
+    t.boolean "propane"
+    t.boolean "toiletvault"
+    t.boolean "toiletflush"
+    t.boolean "toiletouthouse"
+    t.boolean "pullthru"
+    t.boolean "backin"
+    t.integer "rvlength"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   add_foreign_key "parkimages", "rvparks"
