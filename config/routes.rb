@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'google/getPlacesByCity'
   get 'google/getGooglePlaces'
 
+  get 'rvparks/getimages'
   resources :rvparks do
     resources :parkimages
   end

@@ -39,7 +39,7 @@
       'Coast to Coast Campgrounds', 'Adventure Outdoor Resorts', 'Outdoor Adventures', 'Colorado River Adventures'], {}, {:class => 'form-control'}) %>
 
       <hr>
-            <h6>Information</h6>
+      <h6>Information</h6>
       <%= form.label :parkname %><br>
       <%= form.text_field :parkname, :class => 'form-control' %>
 
@@ -53,7 +53,7 @@
       <%= form.label :longitute, "GPS Longitude" %> &nbsp
       <%= form.text_field :longitude %><br>
        -->
-       
+
       <%= form.label :phoneNumber %><br>
       <%= form.text_field :phoneNumber, :class => 'form-control' %>
 
@@ -104,6 +104,7 @@
 
             <h6>Images</h6>
             <% @rvpark.parkimages.each do |image| %>
+              <%= image_tag(image.url, size: 40) %>
               <%= image.url %> &nbsp &nbsp <%= link_to 'delete', [image.rvpark, image], method: :delete %><br>
             <% end %>
 

@@ -1,7 +1,10 @@
 class RvparksController < ApplicationController
 
-    def show
+    def getimages
+        rvpark = Rvpark.find(params[:id])
+        result = rvpark.parkimages
 
+        render json: result
     end
 
     def edit
