@@ -40,7 +40,11 @@ class RvparksController < ApplicationController
                 #@rvpark.parkimages.create(:url => params[:url3])
             end            
 
-            redirect_to edit_rvpark_path(@rvpark)  #admin_rv_path
+            if @rvpark.verified
+                redirect_to admin_rv_path
+            else
+                redirect_to edit_rvpark_path(@rvpark)  #admin_rv_path
+            end
         else
             render 'edit'
         end
@@ -51,7 +55,7 @@ class RvparksController < ApplicationController
     params.require(:rvpark).permit(:parkname, :private, :public, :dayuse, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
     :zip, :website, :reservation, :price, :description, :email, :nopets, :laundry, :bigrigs, :grass, :paved, :dirt, :gravel, :beach, :dumpstation,
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :outdoorsports, :slideouts, :visa, :mastercard,
-    :check, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
-    :foodlockers, :tents, :toiletvault, :toiletflush, :toiletouthouse, :pullthru, :backin, :propane, :latitude, :longitude)
+    :check, :cash, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
+    :foodlockers, :tents, :toiletvault, :toiletflush, :toiletouthouse, :pullthru, :backin, :propane, :latitude, :longitude, :boating, :biking)
   end
 end
