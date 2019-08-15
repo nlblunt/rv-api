@@ -218,6 +218,10 @@
             <div class='col'>
               <h6><b>Out Door Activities</b></h6>
               <div class='form-check'>
+                <%= form.check_box :swimmingpool, :class => 'form-check-input' %>
+                <%= form.label :swimmingpool, "Swimming Pool", :class => 'form-check-label' %>
+              </div>
+              <div class='form-check'>
                 <%= form.check_box :picnictables, :class => 'form-check-input' %>
                 <%= form.label :picnictables, "Picnic Tables", :class => 'form-check-label' %>
               </div>
