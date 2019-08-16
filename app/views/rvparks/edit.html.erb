@@ -43,6 +43,11 @@
       <%= form.label :parkname %><br>
       <%= form.text_field :parkname, :class => 'form-control' %>
 
+      <div class='form-check'>
+        <%= form.check_box :seasonal, :class => 'form-check-input' %>
+        <%= form.label :seasonal, "Seasonal", :class => 'form-check-label' %>
+      </div>
+
       <%= form.label :address %><br>
       <%= form.text_field :address, :class => 'form-control' %>
 
@@ -216,7 +221,7 @@
             </div>
 
             <div class='col'>
-              <h6><b>Out Door Activities</b></h6>
+              <h6><b>Outdoor Activities</b></h6>
               <div class='form-check'>
                 <%= form.check_box :swimmingpool, :class => 'form-check-input' %>
                 <%= form.label :swimmingpool, "Swimming Pool", :class => 'form-check-label' %>
@@ -252,6 +257,10 @@
             </div>
 
             <div class='col'>
+              <div class='form-check'>
+                <%= form.check_box :groupvenue, :class => 'form-check-input' %>
+                <%= form.label :groupvenue, "Group Venue available", :class => 'form-check-label' %>
+              </div>
               <div class='form-check'>
                 <%= form.check_box :dumpstation, :class => 'form-check-input' %>
                 <%= form.label :dumpstation, "Has a dumpstation", :class => 'form-check-label' %>
