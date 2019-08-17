@@ -38,6 +38,10 @@
       <%= form.select(:membership, ['', 'Thousand Trails', 'Outdoor World', 'Resort Parks International',
       'Coast to Coast Campgrounds', 'Adventure Outdoor Resorts', 'Outdoor Adventures', 'Colorado River Adventures'], {}, {:class => 'form-control'}) %>
 
+      <div class ='form-check'>
+        <%= form.check_box :noreservations, :class => 'form-check-input' %>
+        <%= form.label :noreservations, "No Reservations", :class => 'form-check-label' %>
+      </div>
       <hr>
       <h6><b>Information</b></h6>
       <%= form.label :parkname %><br>
