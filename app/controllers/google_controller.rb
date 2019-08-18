@@ -34,36 +34,36 @@ class GoogleController < ApplicationController
           rvRes = Rvpark.create(parkname: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"],price: rv["result"]["price_level"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"], latitude: r["geometry"]["location"]["lat"], longitude: r["geometry"]["location"]["lng"])
           
           if r["photos"]
-            img = rvRes.parkimages.new
+            #img = rvRes.parkimages.new
             url = URI.parse("https://maps.googleapis.com/maps/api/place/photo?photoreference=" + r["photos"][0]["photo_reference"] + "&maxwidth=600&key="+googlePlacesAPI)
             client = HTTPClient.new
 
             temp = client.get(url).body;
             s = temp.split('HREF=')[1]
             s = s.split('>')[0]
-            img.url = s.split('"')[1]
-            puts img.url
-            img.save
+            #img.url = s.split('"')[1]
+            rvRes.parkimages.create(:url => s.split('""')[0])
           end
 
           result << rvRes
         else
           rv2 = Rvpark.where(:googleId => r["place_id"]).first
-
+          puts rv2.parkimages.count
           if rv2.parkimages.count < 1
             img = rv2.parkimages.new
             
             if r["photos"]
-              img = rv2.parkimages.new
+              #img = rv2.parkimages.new
               url = URI.parse("https://maps.googleapis.com/maps/api/place/photo?photoreference=" + r["photos"][0]["photo_reference"] + "&maxwidth=600&key="+googlePlacesAPI)
               client = HTTPClient.new
   
               temp = client.get(url).body;
               s = temp.split('HREF=')[1]
               s = s.split('>')[0]
-              img.url = s.split('"')[1]
-              puts img.url
-              img.save
+              #img.url = s.split('"')[1]
+              rv2.parkimages.create(:url => s.split('""')[0])
+              #puts img.url
+              #img.save
             end
           end
 
