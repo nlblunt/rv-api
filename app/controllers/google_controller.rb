@@ -72,7 +72,7 @@ class GoogleController < ApplicationController
           rv2.longitude = r["geometry"]["location"]["lng"]
           rv2.save
           if rv2.premium
-            if Date.current > rv2.premiumintil
+            if Date.current > rv2.premiumuntil
               rv2.premium = false
               rv2.save
             end
