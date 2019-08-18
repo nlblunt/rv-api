@@ -43,7 +43,7 @@ class GoogleController < ApplicationController
             s = s.split('>')[0]
             #img.url = s.split('"')[1]
             test1 = s.split('""')[0]
-            test1 = URI.parse(test1.splice(1, test1.length-2))
+            test1 = URI.parse(test1.slice(1, test1.length-2))
             puts "Test"
             puts test1
             rvRes.parkimages.create(:url => test1)
@@ -66,7 +66,7 @@ class GoogleController < ApplicationController
               s = s.split('>')[0]
               #img.url = s.split('"')[1]
               test1 = s.split('""')[0]
-              test1 = URI.parse(test1.splice(1, test1.length-2))
+              test1 = URI.parse(test1.slice(1, test1.length-2))
               puts "Test"
               puts test1
               rv2.parkimages.create(:url => test1)
