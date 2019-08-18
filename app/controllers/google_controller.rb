@@ -43,8 +43,9 @@ class GoogleController < ApplicationController
             s = s.split('>')[0]
             #img.url = s.split('"')[1]
             test1 = s.split('""')[0]
-            test2 = s.split('""')[1]
-            rvRes.parkimages.create(:url => test1.gsub('""', ''))
+            test1.gsub!('""', "")
+            puts test1
+            rvRes.parkimages.create(:url => test1)
           end
 
           result << rvRes
@@ -64,7 +65,9 @@ class GoogleController < ApplicationController
               s = s.split('>')[0]
               #img.url = s.split('"')[1]
               test1 = s.split('""')[0]
-              rv2.parkimages.create(:url => test1.gsub('""', ''))
+              test1.gsub!('""', "")
+              puts test1
+              rv2.parkimages.create(:url => test1)
               #puts img.url
               #img.save
             end
