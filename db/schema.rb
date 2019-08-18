@@ -92,6 +92,8 @@ ActiveRecord::Schema.define(version: 2019_08_17_173748) do
     t.boolean "cash"
     t.boolean "boating"
     t.boolean "biking"
+    t.boolean "swimmingpool"
+    t.string "gps"
     t.boolean "seasonal"
     t.boolean "groupvenue"
     t.boolean "noreservations"

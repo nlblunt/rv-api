@@ -17,6 +17,7 @@ class GoogleController < ApplicationController
     when "campground" || "rv_park"
       # GET CAMPGROUND
       data["results"].each do |r|
+        puts r
         # Does this place already exist in the database?
         if Rvpark.where(:googleId => r["place_id"]).blank?
           # No record in the database, so get the information from Google and save
@@ -29,12 +30,47 @@ class GoogleController < ApplicationController
           res2 = client.get_content(url);
           rv = JSON.parse(res2)
 
-          puts rv
           # Create the RV_Park
-          rvRes = Rvpark.create(parkname: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"],price: rv["result"]["price_level"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"])
+          rvRes = Rvpark.create(parkname: rv["result"]["name"], googleId: r["place_id"],icon: r["icon"], rating: rv["result"]["rating"],price: rv["result"]["price_level"], phoneNumber: rv["result"]["formatted_phone_number"], address: r["formatted_address"], website: rv["result"]["website"], latitude: r["geometry"]["location"]["lat"], longitude: r["geometry"]["location"]["lng"])
+          
+          if r["photos"]
+            img = rvRes.parkimages.new
+            url = URI.parse("https://maps.googleapis.com/maps/api/place/photo?photoreference=" + r["photos"][0]["photo_reference"] + "&maxwidth=600&key="+googlePlacesAPI)
+            client = HTTPClient.new
+
+            temp = client.get(url).body;
+            s = temp.split('HREF=')[1]
+            s = s.split('>')[0]
+            img.url = s.split('"')[1]
+            puts img.url
+            img.save
+          end
+
           result << rvRes
         else
           rv2 = Rvpark.where(:googleId => r["place_id"]).first
+
+          if rv2.parkimages.count < 1
+            img = rv2.parkimages.new
+            
+            if r["photos"]
+              img = rv2.parkimages.new
+              url = URI.parse("https://maps.googleapis.com/maps/api/place/photo?photoreference=" + r["photos"][0]["photo_reference"] + "&maxwidth=600&key="+googlePlacesAPI)
+              client = HTTPClient.new
+  
+              temp = client.get(url).body;
+              s = temp.split('HREF=')[1]
+              s = s.split('>')[0]
+              img.url = s.split('"')[1]
+              puts img.url
+              img.save
+            end
+          end
+
+          #UPDATE LAT & LON
+          rv2.latitude = r["geometry"]["location"]["lat"]
+          rv2.longitude = r["geometry"]["location"]["lng"]
+          rv2.save
           if rv2.premium
             if Date.current > rv2.premiumintil
               rv2.premium = false
