@@ -42,6 +42,8 @@ class GoogleController < ApplicationController
             s = temp.split('HREF=')[1]
             s = s.split('>')[0]
             #img.url = s.split('"')[1]
+            puts s.split('""')[0]
+            puts s.split('""')[1]
             rvRes.parkimages.create(:url => s.split('""')[0])
           end
 
