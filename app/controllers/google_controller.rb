@@ -50,7 +50,7 @@ class GoogleController < ApplicationController
           rv2 = Rvpark.where(:googleId => r["place_id"]).first
           puts rv2.parkimages.count
           if rv2.parkimages.count < 1
-            img = rv2.parkimages.new
+            #img = rv2.parkimages.new
             
             if r["photos"]
               #img = rv2.parkimages.new
