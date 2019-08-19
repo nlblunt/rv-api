@@ -52,6 +52,14 @@
         <%= form.label :seasonal, "Seasonal", :class => 'form-check-label' %>
       </div>
 
+      <%= form.label :seasonstart %>
+      <%= form.select(:seasonstart, ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July',
+      'August', 'September', 'October', 'November', 'December'], {}, {:class => 'form-control'}) %>
+
+      <%= form.label :seasonend %>
+      <%= form.select(:seasonend, ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July',
+      'August', 'September', 'October', 'November', 'December'], {}, {:class => 'form-control'}) %>
+
       <%= form.label :address %><br>
       <%= form.text_field :address, :class => 'form-control' %>
 
@@ -130,6 +138,10 @@
             <div class="row">
               <div class="col">
               <h6><b>Road / Lot types</b></h6>
+                <div class="form-check">
+                <%= form.check_box :accessible, :class => 'form-check-input' %>
+                <%= form.label :accessible, "Accessible Sites", :class => 'form-check-label' %>
+              </div>
                 <div class="form-check">
                   <%= form.check_box :dirt, :class => 'form-check-input' %>
                   <%= form.label :dirt, "Dirt", :class => 'form-check-label' %>
@@ -252,18 +264,30 @@
               </div>
               <div class='form-check'>
                 <%= form.check_box :bbqs, :class => 'form-check-input' %>
-                <%= form.label :bbqs, "BBQs", :class => 'form-check-label' %>
+                <%= form.label :bbqs, "BBQs or fire grate", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :firepits, :class => 'form-check-input' %>
                 <%= form.label :firepits, "Campfire ring", :class => 'form-check-label' %>
               </div>
+                <div class='form-check'>
+                <%= form.check_box :firewood, :class => 'form-check-input' %>
+                <%= form.label :fireood, "Firewood", :class => 'form-check-label' %>
+              </div>
             </div>
 
             <div class='col'>
               <div class='form-check'>
+                <%= form.check_box :petarea, :class => 'form-check-input' %>
+                <%= form.label :petarea, "Pet Area available", :class => 'form-check-label' %>
+              </div>
+              <div class='form-check'>
                 <%= form.check_box :groupvenue, :class => 'form-check-input' %>
                 <%= form.label :groupvenue, "Group Venue available", :class => 'form-check-label' %>
+              </div>
+                <div class='form-check'>
+                <%= form.check_box :organizedactivity, :class => 'form-check-input' %>
+                <%= form.label :organizedactivity, "Organized Activities available", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :dumpstation, :class => 'form-check-input' %>
@@ -293,11 +317,7 @@
               </div>
               <div class='form-check'>
                 <%= form.check_box :freeshowers, :class => 'form-check-input' %>
-                <%= form.label :freeshowers, "Free Showers", :class => 'form-check-label' %>
-              </div>
-              <div class='form-check'>
-                <%= form.check_box :paidshowers, :class => 'form-check-input' %>
-                <%= form.label :paidshowers, "Paid Showers", :class => 'form-check-label' %>
+                <%= form.label :freeshowers, "Showers", :class => 'form-check-label' %>
               </div>
             </div>
       </div>
