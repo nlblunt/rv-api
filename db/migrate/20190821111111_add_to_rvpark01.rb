@@ -1,4 +1,4 @@
-class AddToRvpark < ActiveRecord::Migration[5.2]
+class AddToRvpark01 < ActiveRecord::Migration[5.2]
   def change
     add_column :rvparks, :cancellation, :boolean
 	add_column :rvparks, :wildlife, :boolean
