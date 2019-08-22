@@ -18,4 +18,8 @@ class AdminController < ApplicationController
   def rvall
     @rv = Rvpark.all.order(:parkname)
   end
+
+  def rvrequested
+	@rv = Rvpark.where(:requested => true).order(:parkname)
+  end
 end

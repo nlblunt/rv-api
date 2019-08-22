@@ -66,6 +66,9 @@
       <%= form.label :gps, "GPS coordinates" %><br>
       <%= form.text_field :latitude %>, <%= form.text_field :longitude %><br>
 
+	  <%= form.label :elevation, "Elevation" %><br>
+	  <%= form.text_field :elevation, :class => 'form-control' %>
+
       <%= form.label :phoneNumber %><br>
       <%= form.text_field :phoneNumber, :class => 'form-control' %>
 
@@ -96,6 +99,10 @@
 
           <hr>
           <h6><b>Payment Types</b></h6>
+			 <div class='form-check'>
+				<%= form.check_box :cancellation, :class => 'form-check-input' %>
+				<%= form.label :cancellation, "Cancellation Policy", :class => 'form-check-label' %>
+			 </div>
             <div class='form-check'>
               <%= form.check_box :cash, :class => 'form-check-input' %>
               <%= form.label :cash, "Cash", :class => 'form-check-label' %>
@@ -142,6 +149,10 @@
                 <%= form.check_box :accessible, :class => 'form-check-input' %>
                 <%= form.label :accessible, "Accessible Sites", :class => 'form-check-label' %>
               </div>
+				<div class="form-check">
+                  <%= form.check_box :extravehiclefee, :class => 'form-check-input' %>
+                  <%= form.label :extravehiclefee, "Extra Vehicle Fee", :class => 'form-check-label' %>
+                </div>
                 <div class="form-check">
                   <%= form.check_box :dirt, :class => 'form-check-input' %>
                   <%= form.label :dirt, "Dirt", :class => 'form-check-label' %>
@@ -187,6 +198,10 @@
               <div class="form-check">
                 <%= form.check_box :nopets, :class => 'form-check-input' %>
                 <%= form.label :nopets, "No pets allowed", :class => 'form-check-label' %>
+              </div>
+              <div class="form-check">
+                <%= form.check_box :wildlife, :class => 'form-check-input' %>
+                <%= form.label :wildlife, "Wildlife present", :class => 'form-check-label' %>
               </div>
               <div class='form-check'>
                 <%= form.check_box :laundry, :class => 'form-check-input' %>
@@ -321,8 +336,6 @@
               </div>
             </div>
       </div>
-      </div>
-
       <hr>
 
       <div class='form-check'>
@@ -333,7 +346,7 @@
       <p>
         <%= form.submit :class => 'btn btn-primary' %>
       </p>
-   
+      </div>
     <% end %>
    
     <%= link_to 'Back', admin_rv_path %>

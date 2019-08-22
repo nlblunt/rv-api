@@ -40,6 +40,8 @@ class RvparksController < ApplicationController
                 #@rvpark.parkimages.create(:url => params[:url3])
             end            
 
+			 @rvpark.requested = false
+
             if @rvpark.verified
                 redirect_to admin_rv_path
             else
@@ -50,6 +52,14 @@ class RvparksController < ApplicationController
         end
     end
 
+	def requestpark
+		rv = Rv.find(params[:id])
+		rv.requested = true
+		rv.save
+
+		render	json: rv
+	end
+
     private
   def rvpark_params
     params.require(:rvpark).permit(:parkname, :private, :public, :dayuse, :membership, :icon, :googleId, :phoneNumber, :rating, :address,
@@ -57,6 +67,6 @@ class RvparksController < ApplicationController
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :outdoorsports, :slideouts, :visa, :mastercard,
     :check, :cash, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
     :foodlockers, :tents, :toiletvault, :toiletflush, :toiletouthouse, :pullthru, :backin, :propane, :latitude, :longitude, :boating, :biking, :seasonal, :groupvenue, :noreservations,
-    :accessible, :petarea, :firewood, :organizedactivity, :seasonstart, :seasonend)
+    :accessible, :petarea, :firewood, :organizedactivity, :seasonstart, :seasonend, :cancellation, :extravehiclefee, :elevation, :requested)
   end
 end
