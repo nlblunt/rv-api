@@ -11,6 +11,12 @@ class RvparksController < ApplicationController
         @rvpark = Rvpark.find(params[:id])
     end
 
+    def show
+        @rvpark = Rvpark.find(params[:id])
+
+        render json: @rvpark
+    end
+    
     def update
         @rvpark = Rvpark.find(params[:id])
  
