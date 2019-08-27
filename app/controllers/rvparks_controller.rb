@@ -73,6 +73,6 @@ class RvparksController < ApplicationController
     :tent, :store, :wifi, :cell, :cabletv, :firepits, :bbqs, :picnictables, :playground, :communityarea, :outdoorsports, :slideouts, :visa, :mastercard,
     :check, :cash, :militarydiscount, :verified, :isnotcampground, :premium, :premiumuntil, :cabins, :fullhookup, :electriconly, :wateronly, :paidshowers, :freeshowers, 
     :foodlockers, :tents, :toiletvault, :toiletflush, :toiletouthouse, :pullthru, :backin, :propane, :latitude, :longitude, :boating, :biking, :seasonal, :groupvenue, :noreservations,
-    :accessible, :petarea, :firewood, :organizedactivity, :seasonstart, :seasonend, :cancellation, :extravehiclefee, :elevation, :requested)
+    :accessible, :petarea, :firewood, :organizedactivity, :seasonstart, :seasonend, :cancellation, :extravehiclefee, :elevation, :requested, :tentprice, :rvprice)
   end
 end

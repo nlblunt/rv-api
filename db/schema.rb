@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_19_160430) do
+ActiveRecord::Schema.define(version: 201908212222222) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -103,6 +103,13 @@ ActiveRecord::Schema.define(version: 2019_08_19_160430) do
     t.boolean "organizedactivity"
     t.string "seasonstart"
     t.string "seasonend"
+    t.boolean "cancellation"
+    t.boolean "wildlife"
+    t.boolean "extravehiclefee"
+    t.string "elevation"
+    t.boolean "requested"
+    t.string "tentprice"
+    t.string "rvprice"
   end
 
   add_foreign_key "parkimages", "rvparks"
