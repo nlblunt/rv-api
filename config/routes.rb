@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :chambers
   get 'admin/index'
   get 'admin/rv'
   get 'admin/rvall'

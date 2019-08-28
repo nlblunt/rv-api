@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Chambername:</strong>
+  <%= @chamber.chamberName %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @chamber.address %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @chamber.title %>
+</p>
+
+<%= link_to 'Edit', edit_chamber_path(@chamber) %> |
+<%= link_to 'Back', chambers_path %>
