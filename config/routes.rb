@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'rvparks/getimages'
   get 'rvparks/requestpark'
 
+  get 'drawing/addentry'
+  get 'drawing/getentrycount'
+
   resources :rvparks do
     resources :parkimages
   end
