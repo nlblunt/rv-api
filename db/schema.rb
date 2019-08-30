@@ -15,6 +15,31 @@ ActiveRecord::Schema.define(version: 201908212222222) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "chambers", force: :cascade do |t|
+    t.string "chamberName"
+    t.string "address"
+    t.string "phone"
+    t.string "title"
+    t.string "shortdescription"
+    t.string "longdescription"
+    t.string "headerurl"
+    t.string "fullpageurl"
+    t.string "campgrounds"
+    t.string "diners"
+    t.string "attractions"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "drawings", force: :cascade do |t|
+    t.string "email"
+    t.string "name"
+    t.integer "count"
+    t.integer "giveawayid"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "parkimages", force: :cascade do |t|
     t.bigint "rvpark_id"
     t.string "url"

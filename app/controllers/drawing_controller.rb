@@ -12,7 +12,7 @@ class DrawingController < ApplicationController
     end
 
     if found == false
-      Drawing.create(drawing_params]
+      Drawing.create(drawing_params)
       render json: {:count => 1}
     end
   end
@@ -20,9 +20,16 @@ class DrawingController < ApplicationController
   def getentrycount
     user = Drawing.where(:email => params[:email])
     
+    if user.blank?
+      render json: {:count => 0}
+    end
+    
     user.each do |u|
       if u.giveawayid == params(:giveawayid)
         render json: {:count => u.count}
+      else
+        render json: {:count => 0}
+      end
     end
   end
 
