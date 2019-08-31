@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'admin/rvall'
   get 'admin/rvrequested'
   get 'admin/rv_searchresults'
+  get 'admin/bulkupdate'
+  post 'admin/bulkupdate'
   get 'google/getPlacesByZip'
   get 'google/getPlacesByCity'
   get 'google/getGooglePlaces'

@@ -1,0 +1,4 @@
+<%= form_tag({:action => :bulkupdate}, multipart: true) do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag( "Bulk Update") %>
+<% end %>
