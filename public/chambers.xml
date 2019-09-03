@@ -186,9 +186,10 @@
 			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre2.jpg</photo>
 		</photoGallery>
 		<campgrounds>
-			<campgroundId>6</campgroundId>
-			<campgroundId>10</campgroundId>
-			<campgroundId>937</campgroundId>
+			<campgroundId>959</campgroundId>
+			<campgroundId>961</campgroundId>
+			<campgroundId>966</campgroundId>
+      <campgroundId>971</campgroundId>
 		</campgrounds>
 		<diners>
 			<diner>
