@@ -22,9 +22,41 @@
   </div>
 
   <div class="field">
+    <%= form.label :zip %>
+    <%= form.text_field :zip, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :state %>
+    <%= form.text_field :state, :class => 'form-control' %>
+  </div>
+
+
+  <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
+
+  <div class="field">
+    <%= form.label :shortdescription %>
+    <%= form.text_area :shortdescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longdescription %>
+    <%= form.text_area :longdescription %>
+  </div>
+
+  <div class="field">
+    <%= form.label :urlheader %>
+    <%= form.text_field :urlheader %>
+  </div>
+
+  <div class="field">
+    <%= form.label :displayurl %>
+    <%= form.text_field :displayurl %>
+  </div>
+
 
   <div class="actions">
     <%= form.submit %>

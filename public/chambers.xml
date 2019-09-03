@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<chambers>
+	<chamber name="Del Norte">
+		<id>1</id>
+		<chamberName>Del Norte</chamberName>
+		<address></address>
+		<state>CA</state>
+		<zip>95531</zip>
+		<title>REDWOOD FOREST, CRESCENT CITY CA</title>
+		<shortDescription>LOCATED IN CRESCENT CITY, THE REDWOOD FOREST HAS SOME OF THE OLDEST LIVING TREES IN THE WORLD.</shortDescription>
+		<longDescription>Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild river-ways, and nearly 40-miles of rugged coastline.  For thousands of years people have lived in this verdant landscape.  Together, the National Park Service and California State Parks are managing and restoring these lands for the inspiration, enjoyment, and education of all. </longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/RedwoodNationalFull.png</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/demo+chamber+image.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre1.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre2.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId>3</campgroundId>
+			<campgroundId>6</campgroundId>
+			<campgroundId>10</campgroundId>
+			<campgroundId>937</campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName>Hiouchi Cafe</dinerName>
+				<dinerPhone>707-458-3445</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Cafe</dinerType>
+			</diner>
+			<diner>
+				<dinerName>CC Diner</dinerName>
+				<dinerPhone>707-465-5858</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Diner</dinerType>
+			</diner>
+			<diner>
+				<dinerName>Harbor View Grotto</dinerName>
+				<dinerPhone>707-464-3815</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Diner</dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+	<chamber name="Tuolumne County Chamber of Commerce">
+		<id></id>
+		<chamberName>Tuolumne County Chamber of Commerce</chamberName>
+		<address></address>
+		<state>CA</state>
+		<zip>95389</zip>
+		<title>YOSEMITE NATIONAL PARK</title>
+		<shortDescription>Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</shortDescription>
+		<longDescription>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.  First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more. </longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+full.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+header.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+gal+1.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId>213</campgroundId>
+			<campgroundId>938</campgroundId>
+			<campgroundId>280</campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName>Pinocchio's</dinerName>
+				<dinerPhone>209-533-1996</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Restaurant</dinerType>
+			</diner>
+			<diner>
+				<dinerName>Willows Steakhouse and Seafood Grille</dinerName>
+				<dinerPhone>209-984-3998</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Steakhouse</dinerType>
+			</diner>
+			<diner>
+				<dinerName>The Service Station</dinerName>
+				<dinerPhone>209-782-5122</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Cafe</dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+	<chamber name="Grand Canyon South Rim Chamber of Commerce">
+		<id>3</id>
+		<chamberName>Grand Canyon South Rim Chamber of Commerce</chamberName>
+		<address></address>
+		<state>AZ</state>
+		<zip>86023</zip>
+		<title>GRAND CANYON</title>
+		<shortDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</shortDescription>
+		<longDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+full.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+header.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+g1.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId>468</campgroundId>
+			<campgroundId>471</campgroundId>
+			<campgroundId>477</campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName>Big E Steakhouse</dinerName>
+				<dinerPhone>928-638-0333</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Steakhouse</dinerType>
+			</diner>
+			<diner>
+				<dinerName>Plaza Bonita Mexican Restaurant</dinerName>
+				<dinerPhone>928-638-8900</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Mexican</dinerType>
+			</diner>
+			<diner>
+				<dinerName>RPs Stage Stop</dinerName>
+				<dinerPhone>928-606-0360</dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType>Cafe</dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+	<chamber name="Bayfield Chamber of Commerce">
+		<id></id>
+		<chamberName>Bayfield Chamber of Commerce</chamberName>
+		<address></address>
+		<state>CO</state>
+		<zip>81122</zip>
+		<title>SAN JUAN NP, BAYFIELD CO</title>
+		<shortDescription>San Juan National Forest encompasses about 1.8 million acres in the southwestern corner of Colorado.</shortDescription>
+		<longDescription>San Juan National Forest encompasses about 1.8 million acres in the southwestern corner of Colorado. Terrain ranges from high-desert mesas to alpine peaks, with thousands of miles of back roads and hundreds of miles of trails to explore. These federal lands are managed for multiple uses and visitors are asked to respect each other and the natural resources. The Forest Supervisor's Office is located in the San Juan Public Lands Center in Durango, Colorado, with district offices in Bayfield, Dolores and Pagosa Springs.</longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/Bayfield+CO/bayfield+display.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/Bayfield+CO/bayfield+display.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre1.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre2.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId>6</campgroundId>
+			<campgroundId>10</campgroundId>
+			<campgroundId>937</campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName></dinerName>
+				<dinerPhone></dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+	<chamber>
+		<id></id>
+		<chamberName></chamberName>
+		<address></address>
+		<state></state>
+		<zip></zip>
+		<title></title>
+		<shortDescription></shortDescription>
+		<longDescription></longDescription>
+		<displayImage></displayImage>
+		<headerImage></headerImage>
+		<photoGallery>
+			<photo></photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId></campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName></dinerName>
+				<dinerPhone></dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+</chambers>  
