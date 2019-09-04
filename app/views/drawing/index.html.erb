@@ -1,0 +1,23 @@
+<h1>Drawings</h1>
+
+<table class="table table-sm table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>email</th>
+      <th>ID</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entries.each do |entry| %>
+      <tr>
+        <td><%= entry.name %></td>
+        <td><%= entry.email %></td>
+        <td><%= entry.giveawayid %></td>
+        <td><%= entry.count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
