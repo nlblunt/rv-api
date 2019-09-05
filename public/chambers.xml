@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <chambers>
 	<chamber name="Del Norte">
 		<id>1</id>
@@ -217,6 +217,48 @@
 		</others>
 	</chamber>
 	<chamber>
+		<id></id>
+		<chamberName>Gold Beach Chamber of Commerce</chamberName>
+		<address></address>
+		<state>OR</state>
+		<zip>97444</zip>
+		<title>Sunny Gold Beach Coast</title>
+		<shortDescription>Gold Beach has more sunny days than anywhere else on the coast</shortDescription>
+		<longDescription>Gold Beach has more sunny days than anywhere else on the coast, and more to offer too.  This little sea town is located on Highway 101, but you'll want to stop for awhile to truly experience all we have to offer.</longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonawscom/GoldBeach/goldbeach+display.png</displayImage>
+		<headerImage> https://52weeksoffun.s3-us-west-2.amazonawscom/GoldBeach/goldbeach+header.png</headerImage>
+		<photoGallery>
+			<photo></photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId></campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName></dinerName>
+				<dinerPhone></dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+<chamber>
 		<id></id>
 		<chamberName></chamberName>
 		<address></address>
