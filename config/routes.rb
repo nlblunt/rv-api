@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get 'rvparks/getimages'
   get 'rvparks/requestpark'
 
+  get 'drawing/index'
   get 'drawing/addentry'
   get 'drawing/getentrycount'
 

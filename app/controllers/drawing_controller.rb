@@ -1,4 +1,8 @@
 class DrawingController < ApplicationController
+  def index
+    @entries = Drawing.all
+  end
+  
   def addentry
     user = Drawing.where(:email => params[:email])
 
