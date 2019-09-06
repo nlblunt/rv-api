@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+ <?xml version="1.0" encoding="UTF-8" ?>
 <chambers>
 	<chamber name="Del Norte">
 		<id>1</id>
@@ -225,8 +225,8 @@
 		<title>Sunny Gold Beach Coast</title>
 		<shortDescription>Gold Beach has more sunny days than anywhere else on the coast</shortDescription>
 		<longDescription>Gold Beach has more sunny days than anywhere else on the coast, and more to offer too.  This little sea town is located on Highway 101, but you'll want to stop for awhile to truly experience all we have to offer.</longDescription>
-		<displayImage>https://52weeksoffun.s3-us-west-2.amazonawscom/GoldBeach/goldbeach+display.png</displayImage>
-		<headerImage> https://52weeksoffun.s3-us-west-2.amazonawscom/GoldBeach/goldbeach+header.png</headerImage>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+display.png</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+header.jpg</headerImage>
 		<photoGallery>
 			<photo></photo>
 		</photoGallery>
@@ -300,4 +300,4 @@
 			</other>
 		</others>
 	</chamber>
-</chambers>  
+</chambers>
