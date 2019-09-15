@@ -1,13 +1,14 @@
  <?xml version="1.0" encoding="UTF-8" ?>
 <chambers>
-	<chamber name="Del Norte">
+	<chamber name="Crescent City / Del Norte Chamber of Commerce">
 		<id>1</id>
-		<chamberName>Del Norte</chamberName>
+		<chamberName>Crescent City / Del Norte Chamber of Commerce</chamberName>
 		<address></address>
 		<state>CA</state>
 		<zip>95531</zip>
 		<title>REDWOOD FOREST, CRESCENT CITY CA</title>
-		<shortDescription>LOCATED IN CRESCENT CITY, THE REDWOOD FOREST HAS SOME OF THE OLDEST LIVING TREES IN THE WORLD.</shortDescription>
+		<webUrl></webUrl>
+		<shortDescription>Located in Crescent City, the Redwood Forest has some of the oldest living trees in the world.</shortDescription>
 		<longDescription>Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild river-ways, and nearly 40-miles of rugged coastline.  For thousands of years people have lived in this verdant landscape.  Together, the National Park Service and California State Parks are managing and restoring these lands for the inspiration, enjoyment, and education of all. </longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/RedwoodNationalFull.png</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/demo+chamber+image.jpg</headerImage>
@@ -65,6 +66,7 @@
 		<state>CA</state>
 		<zip>95389</zip>
 		<title>YOSEMITE NATIONAL PARK</title>
+		<webUrl></webUrl>
 		<shortDescription>Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</shortDescription>
 		<longDescription>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.  First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more. </longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+full.jpg</displayImage>
@@ -121,6 +123,7 @@
 		<state>AZ</state>
 		<zip>86023</zip>
 		<title>GRAND CANYON</title>
+		<webUrl></webUrl>
 		<shortDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</shortDescription>
 		<longDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+full.jpg</displayImage>
@@ -223,10 +226,54 @@
 		<state>OR</state>
 		<zip>97444</zip>
 		<title>Sunny Gold Beach Coast</title>
+		<webUrl></webUrl>
 		<shortDescription>Gold Beach has more sunny days than anywhere else on the coast</shortDescription>
 		<longDescription>Gold Beach has more sunny days than anywhere else on the coast, and more to offer too.  This little sea town is located on Highway 101, but you'll want to stop for awhile to truly experience all we have to offer.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+display.png</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+header.jpg</headerImage>
+		<photoGallery>
+			<photo></photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId></campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName></dinerName>
+				<dinerPhone></dinerPhone>
+				<dinerAddress></dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName></attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress></attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+<chamber>
+		<id></id>
+		<chamberName>Bouse Chamber of Commerce</chamberName>
+		<address></address>
+		<state>AZ</state>
+		<zip>85325</zip>
+		<title>HISTORIC BOUSE ARIZONA</title>
+		<webUrl>http://www.bouseazchamber.com/Index.html</webUrl>
+		<shortDescription>Bouse has what residents call a "unique flavor". The historical link between Mining and the Bouse area is unquestionable.</shortDescription>
+		<longDescription>Bouse has what residents call a "unique flavor". The historical link between Mining and the Bouse area is unquestionable. Then the region was to become a official secret as the location for the Top Secret location of Camp Bouse for the Army during the early 1940's while the rest of the world was dealing with WWII.In total contrast to the top secret base was the nearby Japanese Internment Camp of Poston.</longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/BouseAZ/bouse+display.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/BouseAZ/bouse+header.jpg</headerImage>
 		<photoGallery>
 			<photo></photo>
 		</photoGallery>
@@ -265,6 +312,7 @@
 		<state></state>
 		<zip></zip>
 		<title></title>
+		<webUrl></webUrl>
 		<shortDescription></shortDescription>
 		<longDescription></longDescription>
 		<displayImage></displayImage>
@@ -300,4 +348,5 @@
 			</other>
 		</others>
 	</chamber>
+
 </chambers>
