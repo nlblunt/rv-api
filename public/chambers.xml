@@ -80,7 +80,14 @@
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+full.jpg</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+header.jpg</headerImage>
 		<photoGallery>
-			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+gal+1.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+full.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo1.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo2.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo3.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo4.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo5.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo6.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/tuo7.jpg</photo>
 		</photoGallery>
 		<campgrounds>
 			<campgroundId>213</campgroundId>
