@@ -6,15 +6,23 @@
 		<address></address>
 		<state>CA</state>
 		<zip>95531</zip>
-		<title>REDWOOD FOREST, CRESCENT CITY CA</title>
+		<title>Crescent City, CA</title>
 		<webUrl></webUrl>
 		<shortDescription>Located in Crescent City, the Redwood Forest has some of the oldest living trees in the world.</shortDescription>
-		<longDescription>Most people know Redwood as home to the tallest trees on Earth. The parks also protect vast prairies, oak woodlands, wild river-ways, and nearly 40-miles of rugged coastline.  For thousands of years people have lived in this verdant landscape.  Together, the National Park Service and California State Parks are managing and restoring these lands for the inspiration, enjoyment, and education of all. </longDescription>
+		<longDescription>Crescent City is home to Redwood National and State Parks and the Sequoia Semperviren, or tallest trees on Earth. Once covering most of the land of North America, these trees are now only found in a narrow area along the northern California coast, where they tower over the landscape, growing 350 feet tall, and thousands of acres of old-growth forest have yet to be seen by humans. But Crescent City is home to so much more. Discover the Smith River, a Wild and Scenic River offering crystal clear emerald waters and record-setting salmon, two historic lighthouses, one the site of a shipwreck carrying millions in dollars of gold bars, and growing populations of majestic Roosevelt Elk.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/RedwoodNationalFull.png</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/demo+chamber+image.jpg</headerImage>
 		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/RedwoodNationalFull.png</photo>
 			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre1.jpg</photo>
 			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre2.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre3.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre4.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre5.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre6.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre7.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre8.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/RedwoodNational/cre9.jpg</photo>
 		</photoGallery>
 		<campgrounds>
 			<campgroundId>3</campgroundId>
@@ -65,10 +73,10 @@
 		<address></address>
 		<state>CA</state>
 		<zip>95389</zip>
-		<title>YOSEMITE NATIONAL PARK</title>
+		<title>Tuolumne County, CA</title>
 		<webUrl></webUrl>
 		<shortDescription>Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.</shortDescription>
-		<longDescription>Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.  First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more. </longDescription>
+		<longDescription>Best known for one of the oldest-designated national parks, Tuolumne County is home to Yosemite National Park, encompassing 1,200 square miles in the Sierra Nevada mountains. Much waits to be discovered here. But Yosemite is most famous for it glacier-carved granite valley filled with breathless waterfalls and artistic granite formations. The largest trees in the world, the Giant Sequoia, can be found within its boundaries, as is the tallest waterfall in the continental US, Yosemite Falls, with a vertical drop of nearly half a mile. It is a rock-climbing paradise, as mountaineers seek to ascend vertical peaks like El Capitan and Half Dome. It is a shrine to those who thought to preserve this beautiful destination for a multitude of generations to come. Tuolumne County is also known for its authentic Gold Rush towns (with active gold discoveries still taking place), its world-renowned Class 4 river rapids, and its remote high-country hiking as both the Pacific Crest Trail and the John Muir Trail wander through this area.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+full.jpg</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/YosemiteNational/yosemite+header.jpg</headerImage>
 		<photoGallery>
@@ -122,10 +130,10 @@
 		<address></address>
 		<state>AZ</state>
 		<zip>86023</zip>
-		<title>GRAND CANYON</title>
+		<title>Grand Canyon, AZ</title>
 		<webUrl></webUrl>
 		<shortDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</shortDescription>
-		<longDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 river miles (446km) long, up to 18 miles (29km) wide, and a mile (1.6km) deep. Grand Canyon overwhelms our senses through its immense size.</longDescription>
+		<longDescription>Unique combinations of geologic color and erosional forms decorate a canyon that is 277 miles long, 18 miles wide at its widest point, and a mile deep.  Although the South Rim of the Grand Canyon is visited by over seven million people annually from all over the globe, those who travel to see this Wonder of the Natural World understand how the first explorers felt at viewing it...the sight has been known to overwhelm the senses. And there is so much to still discover. It is a destination on the world’s bucket list and the Grand Canyon South Rim Chamber of Commerce, operator of the official Arizona Grand Canyon Visitor Center in Tusayon, invites travelers to have an enjoyable and memorable experience by offering fascinating and exciting adventures to meet every level of interest.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+full.jpg</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GrandCanyon/grand+canyon+header.jpg</headerImage>
 		<photoGallery>
@@ -179,9 +187,9 @@
 		<address></address>
 		<state>CO</state>
 		<zip>81122</zip>
-		<title>SAN JUAN NP, BAYFIELD CO</title>
+		<title>Bayfield, CO</title>
 		<shortDescription>San Juan National Forest encompasses about 1.8 million acres in the southwestern corner of Colorado.</shortDescription>
-		<longDescription>San Juan National Forest encompasses about 1.8 million acres in the southwestern corner of Colorado. Terrain ranges from high-desert mesas to alpine peaks, with thousands of miles of back roads and hundreds of miles of trails to explore. These federal lands are managed for multiple uses and visitors are asked to respect each other and the natural resources. The Forest Supervisor's Office is located in the San Juan Public Lands Center in Durango, Colorado, with district offices in Bayfield, Dolores and Pagosa Springs.</longDescription>
+		<longDescription>This hidden jewel in the southwestern corner of Colorado encompasses about 1.8 million acres. The terrain of the San Juan National Forest ranges from high-desert mesas to alpine peaks, with thousands of miles of back roads and hundreds of miles of trails to explore. Whether it’s tree-filled mountains or red deserts, lake boating or riverside fishing, mountain hiking or mountain biking, skiing or boarding, adventurers will find it all right outside their door and Bayfield sits at the center of it all.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/Bayfield+CO/bayfield+display.jpg</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/Bayfield+CO/bayfield+display.jpg</headerImage>
 		<photoGallery>
@@ -225,10 +233,10 @@
 		<address></address>
 		<state>OR</state>
 		<zip>97444</zip>
-		<title>Sunny Gold Beach Coast</title>
+		<title>Gold Beach, OR</title>
 		<webUrl></webUrl>
 		<shortDescription>Gold Beach has more sunny days than anywhere else on the coast</shortDescription>
-		<longDescription>Gold Beach has more sunny days than anywhere else on the coast, and more to offer too.  This little sea town is located on Highway 101, but you'll want to stop for awhile to truly experience all we have to offer.</longDescription>
+		<longDescription>Gold Beach is located on the southern Oregon coast, in the heart of America’s Wild Rivers Coast, just 37 miles north of the California border. Discover why it’s often referred to as a “banana belt”, with a year-round climate that is more temperate than anywhere else on the Northwest Pacific coast. Gold Beach is also where the clear waters of the Rogue River meets the majestic Pacific Ocean. Beautiful trees, mountains, rivers, beaches and the ocean define its landscape. Summers offer pleasant temperatures of 65 to 70 degrees, sunny days, and beautiful evening skies for stargazing. During the fall and spring, look for migrating Grey whales, and fish for salmon or steelhead when the runs begin. Windsurf, walk the beaches or take a jet boat ride upriver through pristine wilderness to glimpse at bald eagles, bear or river otter. Local business owners are ready to make your stay enjoyable and memorable.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+display.png</displayImage>
 		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/GoldBeach/goldbeach+header.jpg</headerImage>
 		<photoGallery>
