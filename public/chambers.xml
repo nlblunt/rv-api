@@ -3,6 +3,7 @@
 	<chamber name="Crescent City / Del Norte Chamber of Commerce">
 		<id>1</id>
 		<chamberName>Crescent City / Del Norte Chamber of Commerce</chamberName>
+		<phone></phone>
 		<address></address>
 		<state>CA</state>
 		<zip>95531</zip>
@@ -70,6 +71,7 @@
 	<chamber name="Tuolumne County Chamber of Commerce">
 		<id></id>
 		<chamberName>Tuolumne County Chamber of Commerce</chamberName>
+				<phone></phone>
 		<address></address>
 		<state>CA</state>
 		<zip>95389</zip>
@@ -134,6 +136,7 @@
 	<chamber name="Grand Canyon South Rim Chamber of Commerce">
 		<id>3</id>
 		<chamberName>Grand Canyon South Rim Chamber of Commerce</chamberName>
+				<phone></phone>
 		<address></address>
 		<state>AZ</state>
 		<zip>86023</zip>
@@ -191,10 +194,12 @@
 	<chamber name="Bayfield Chamber of Commerce">
 		<id></id>
 		<chamberName>Bayfield Chamber of Commerce</chamberName>
+				<phone></phone>
 		<address></address>
 		<state>CO</state>
 		<zip>81122</zip>
 		<title>Bayfield, CO</title>
+				<webUrl></webUrl>
 		<shortDescription>San Juan National Forest encompasses about 1.8 million acres in the southwestern corner of Colorado.</shortDescription>
 		<longDescription>This hidden jewel in the southwestern corner of Colorado encompasses about 1.8 million acres. The terrain of the San Juan National Forest ranges from high-desert mesas to alpine peaks, with thousands of miles of back roads and hundreds of miles of trails to explore. Whether it’s tree-filled mountains or red deserts, lake boating or riverside fishing, mountain hiking or mountain biking, skiing or boarding, adventurers will find it all right outside their door and Bayfield sits at the center of it all.</longDescription>
 		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/Bayfield+CO/bayfield+display.jpg</displayImage>
@@ -237,6 +242,7 @@
 	<chamber>
 		<id></id>
 		<chamberName>Gold Beach Chamber of Commerce</chamberName>
+				<phone></phone>
 		<address></address>
 		<state>OR</state>
 		<zip>97444</zip>
@@ -280,6 +286,7 @@
 <chamber>
 		<id></id>
 		<chamberName>Bouse Chamber of Commerce</chamberName>
+				<phone></phone>
 		<address></address>
 		<state>AZ</state>
 		<zip>85325</zip>
@@ -322,7 +329,88 @@
 	</chamber>
 <chamber>
 		<id></id>
+		<chamberName>Marianna Jackson County</chamberName>
+		<phone></phone>
+		<address></address>
+		<state>FL</state>
+		<zip>32448</zip>
+		<title>Marianna Jackson County</title>
+		<webUrl></webUrl>
+		<shortDescription>Marianna Jackson County offers an array of things to do, even in the aftermath of Hurricane Michael. Experience the “new normal” for Marianna, as visitors are encouraged to discover hidden secrets as they learn how Marianna is re-building about almost  200 years of Jackson County history.</shortDescription>
+		<longDescription>On October 10, 2018, Jackson County experienced the unimaginable when Hurricane Michael made landfall as a historic Category 5 hurricane.  The devastation was felt far and wide, and a year later, the community is still recovering. Progress has been slow, but it has been made.  Many of the locally-owned businesses have reopened to the public. Its restaurants are back to serving the public, and its natural assets are being cleaned up, but it will likely never be the same. That doesn’t mean visitors won’t be able to enjoy them just as much. Three Rivers State Park has reopened for day use, the Chipola River and Spring Creek have been cleared of debris for boaters and floaters, Merritt’s Mill Pond has been welcoming back guests for paddling, fishing, and cave diving, and Lake Seminole, the Chattahoochee River, and the Apalachicola River are still fishing hotspots for anglers. But hiking and biking trails are facing a different story.  With the powerful winds came destruction to the forests.  Not a single trail was spared in Jackson County, and with most of them on state and federal lands, clean-up efforts will take time. This changing landscape, though, brings new opportunities. Instead of hiking a trail, take a scenic drive to explore the Spanish Heritage Trail. Discover local farms on the AgriTourism Trail.  Stop in and shop at any of the local stores and boutiques, or grab a bite to eat at one of Marianna’s delicious restaurants.  Explore the history of Jackson County along the new Historic Marker Trail. There are so many unique opportunities in Jackson County, you’re sure to find something new to experience..And as time progresses, progress will continue with new openings, events, and things to do.  The chamber welcomes you into Jackson County and encourages you to explore its “New Normal”, while supporting the rebuilding of a community. </longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/FL-MariannaJacksonCounty/display.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/FL-MariannaJacksonCounty/header.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/FL-MariannaJacksonCounty/1.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId></campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName>Penello's Italian Cuisine</dinerName>
+				<dinerPhone>(850) 526-5200</dinerPhone>
+				<dinerAddress>4217 Lafayette Street</dinerAddress>
+				<dinerType>Italian</dinerType>
+			</diner>
+						<diner>
+				<dinerName>El Rio Mexican Restaurant</dinerName>
+				<dinerPhone>(850) 633-3060</dinerPhone>
+				<dinerAddress>2914 Optimist Drive</dinerAddress>
+				<dinerType>Mexican</dinerType>
+			</diner>
+						<diner>
+				<dinerName>Gazebo Coffee Shoppe and Deli</dinerName>
+				<dinerPhone>(850) 526-1276</dinerPhone>
+				<dinerAddress>4412 Lafayette Street</dinerAddress>
+				<dinerType>Deli</dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName>Spanish Heritage Trail</attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress>4318 Lafayette Street, Marianna, Florida</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+						<attraction>
+				<attractionName>Florida Caverns State Park</attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress>3345 Caverns Rd</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+						<attraction>
+				<attractionName>Cindale Farms</attractionName>
+				<attractionPhone></attractionPhone>
+				<attractionAddress>3958 Old US Road</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName>Historic Russ House and Visitors Center</otherName>
+				<otherPhone></otherPhone>
+				<otherAddress4318 Lafayette Street</otherAddress>
+				<otherType></otherType>
+			</other>
+						<other>
+				<otherName>Southern Traditions Boutique</otherName>
+				<otherPhone>(850) 482-3400</otherPhone>
+				<otherAddress>4496 Lafayette Street</otherAddress>
+				<otherType></otherType>
+			</other>
+						<other>
+				<otherName>Country Cottage Antiques</otherName>
+				<otherPhone>(850) 557-3363</otherPhone>
+				<otherAddress>2813 Highway 71</otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+<chamber>
+		<id></id>
 		<chamberName></chamberName>
+		<phone></phone>
 		<address></address>
 		<state></state>
 		<zip></zip>
