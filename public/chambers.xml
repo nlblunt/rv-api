@@ -3,8 +3,8 @@
 	<chamber name="Crescent City / Del Norte Chamber of Commerce">
 		<id>1</id>
 		<chamberName>Crescent City / Del Norte Chamber of Commerce</chamberName>
-		<phone></phone>
-		<address></address>
+		<phone>(707) 464-3174</phone>
+		<address>1001 Front St, Crescent City</address>
 		<state>CA</state>
 		<zip>95531</zip>
 		<title>Crescent City, CA</title>
@@ -71,8 +71,8 @@
 	<chamber name="Tuolumne County Chamber of Commerce">
 		<id></id>
 		<chamberName>Tuolumne County Chamber of Commerce</chamberName>
-				<phone></phone>
-		<address></address>
+		<phone>(209) 532-4212</phone>
+		<address>222 S Shepherd St, Sonora</address>
 		<state>CA</state>
 		<zip>95389</zip>
 		<title>Tuolumne County, CA</title>
@@ -136,8 +136,8 @@
 	<chamber name="Grand Canyon South Rim Chamber of Commerce">
 		<id>3</id>
 		<chamberName>Grand Canyon South Rim Chamber of Commerce</chamberName>
-				<phone></phone>
-		<address></address>
+		<phone>(844) 638-2901</phone>
+		<address>469 State Hwy 64, Grand Canyon</address>
 		<state>AZ</state>
 		<zip>86023</zip>
 		<title>Grand Canyon, AZ</title>
@@ -194,8 +194,8 @@
 	<chamber name="Bayfield Chamber of Commerce">
 		<id></id>
 		<chamberName>Bayfield Chamber of Commerce</chamberName>
-				<phone></phone>
-		<address></address>
+		<phone>(715) 779-3335</phone>
+		<address>42 S Broad St, Bayfield</address>
 		<state>CO</state>
 		<zip>81122</zip>
 		<title>Bayfield, CO</title>
@@ -242,8 +242,8 @@
 	<chamber>
 		<id></id>
 		<chamberName>Gold Beach Chamber of Commerce</chamberName>
-				<phone></phone>
-		<address></address>
+		<phone>(541) 247-0923</phone>
+		<address>29692 Ellensburg Ave, Gold Beach</address>
 		<state>OR</state>
 		<zip>97444</zip>
 		<title>Gold Beach, OR</title>
@@ -286,8 +286,8 @@
 <chamber>
 		<id></id>
 		<chamberName>Bouse Chamber of Commerce</chamberName>
-				<phone></phone>
-		<address></address>
+		<phone>(928) 851-2509</phone>
+		<address>44362 E. Main Street, Bouse</address>
 		<state>AZ</state>
 		<zip>85325</zip>
 		<title>HISTORIC BOUSE ARIZONA</title>
@@ -409,6 +409,77 @@
 	</chamber>
 <chamber>
 		<id></id>
+		<chamberName>Dixon-Lee County</chamberName>
+		<phone></phone>
+		<address></address>
+		<state>IL</state>
+		<zip>61021</zip>
+		<title>Dixon-Lee County, IL</title>
+		<webUrl></webUrl>
+		<shortDescription>Looking for quality time with friends, a family day trip or the rich history of great U.S. Presidents? We have the perfect answer. Discover Dixon and Lee County’s wide variety of quality events, shows, activities and shopping.</shortDescription>
+		<longDescription>History abounds in Dixon, Illinois. Named after founder John Dixon, who operated a rope ferry service across Rock River, Dixon is the boyhood home of former U.S. President Ronald Reagan, and the site of the Lincoln Monument State Memorial, marking the spot where Abraham Lincoln joined the Illinois militia at Fort Dixon in 1832 during the Black Hawk War. The memorial is located on the west side of Dixon's main street, Galena Avenue, north of the Rock River. But this is also a vibrant community. Trek, tour, tout or taste, it has something for everyone. Keep it close to nature or hold the past in your heart. Delicious eats and stylish shops will satisfy your cravings. From the finest of visual and performing arts to world class outdoor recreation, there’s plenty to do in Dixon. Dixon and Lee County welcome you!</longDescription>
+		<displayImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/display.jpg</displayImage>
+		<headerImage>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/header.jpg</headerImage>
+		<photoGallery>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/1.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/2.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/3.jpg</photo>
+			<photo>https://52weeksoffun.s3-us-west-2.amazonaws.com/IL-Dixon-Lee/4.jpg</photo>
+		</photoGallery>
+		<campgrounds>
+			<campgroundId></campgroundId>
+		</campgrounds>
+		<diners>
+			<diner>
+				<dinerName>Curate Kitchen</dinerName>
+				<dinerPhone>(815) 677-7032</dinerPhone>
+				<dinerAddress>120 W River St, Dixon, IL 61021</dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+						<diner>
+				<dinerName>Mama Cimino’s</dinerName>
+				<dinerPhone>(815) 288-4448</dinerPhone>
+				<dinerAddress>104 S. Peoria Ave, Dixon, IL 61021</dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+						<diner>
+				<dinerName>Somkit</dinerName>
+				<dinerPhone>(815) 284-8499</dinerPhone>
+				<dinerAddress>214 West First Street, Dixon, IL 61021</dinerAddress>
+				<dinerType></dinerType>
+			</diner>
+		</diners>
+		<attractions>
+			<attraction>
+				<attractionName>Ronald Reagan Boyhood Home</attractionName>
+				<attractionPhone>815 288 517</attractionPhone>
+				<attractionAddress>810 Hennepin Avenue, Dixon, IL 61021</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+						<attraction>
+				<attractionName>Northwest Territory Historic Center</attractionName>
+				<attractionPhone>(815) 288-5508</attractionPhone>
+				<attractionAddress>205 West 5th Street, Dixon, IL 61021</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+						<attraction>
+				<attractionName>Dixon Petunia Festival</attractionName>
+				<attractionPhone>(815) 288-7465</attractionPhone>
+				<attractionAddress>77 S. Hennepin Ave, Dixon, IL 61021</attractionAddress>
+				<attractionType></attractionType>
+			</attraction>
+		</attractions>
+		<others>
+			<other>
+				<otherName></otherName>
+				<otherPhone></otherPhone>
+				<otherAddress></otherAddress>
+				<otherType></otherType>
+			</other>
+		</others>
+	</chamber>
+<chamber>
+		<id></id>
 		<chamberName></chamberName>
 		<phone></phone>
 		<address></address>
@@ -451,5 +522,4 @@
 			</other>
 		</others>
 	</chamber>
-
 </chambers>
